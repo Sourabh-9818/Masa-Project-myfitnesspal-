@@ -1,56 +1,68 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
 }
-body{
-    font-family: montserrat;
+
+body {
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+    /* font-family: montserrat; */
 }
-.nav{
+
+.nav {
     height: 12vh;
     display: flex;
     justify-content: space-between;
     background-color: white;
 }
-.nav img{
+
+.nav img {
     margin-left: 150px;
     height: 12vh;
 }
-.right{
+
+.right {
     margin-top: 30px;
     margin-right: 35px;
 }
-.right a{   
+
+.right a {
     color: blue;
 }
-nav{
+
+nav {
     height: 60px;
     width: 100%;
     background: rgb(47, 143, 233);
 }
-nav ul{
+
+nav ul {
     float: left;
     margin-left: 140px;
 }
-nav li{
+
+nav li {
     display: inline-block;
     margin: 0 8px;
     margin-bottom: 20px;
     line-height: 60px;
 }
-nav a{
+
+nav a {
     color: white;
     font-size: 18px;
     border: 1px solid transparent;
     padding: 7px 15px;
     border-radius: 3px;
 }
-a:hover{
+
+a:hover {
     border: 1px solid white;
     transition: .5s ease;
 }
-nav #icon{
+
+nav #icon {
     color: white;
     font-size: 30px;
     line-height: 60px;
@@ -59,36 +71,41 @@ nav #icon{
     cursor: pointer;
     display: none;
 }
-#Container{
+
+#Container {
     background: url('https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-collage-top-large%402x.dcc5ac56.png&w=1200&q=75') no-repeat;
     background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     height: 100vh;
     padding-top: 100px;
 }
-.main{
+
+.main {
     display: inline-block;
-    margin-left:  160px;
-    
+    margin-left: 160px;
 }
-.subdiv{
+
+.subdiv {
     width: 50%;
     margin-top: -40px;
     padding-bottom: 20px;
 }
-.subdiv h1{
+
+.subdiv h1 {
     margin-right: 80px;
     font-size: 70px;
 }
-.subdiv p{
+
+.subdiv p {
     margin-top: 10px;
     margin-right: 80px;
     font-size: 20px;
     padding: 5px;
 }
-.subdiv button{
+
+.subdiv button {
     margin-top: 10px;
     padding: 5px;
     border: none;
@@ -97,76 +114,87 @@ nav #icon{
     height: 8vh;
     background-color: #3498db;
 }
-.subdiv button a{
+
+.subdiv button a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     border: none;
 }
-.subdiv button:hover{
+
+.subdiv button:hover {
     border: 1px solid white;
     transition: .5s ease;
 }
-.subdiv-2{
+
+.subdiv-2 {
     display: flex;
     font-size: 20px;
     margin-top: 10px;
     padding: 5px;
 }
-.subdiv-2 a{
+
+.subdiv-2 a {
     text-decoration: none;
     margin-left: 10px;
     border: none;
 }
-.line{
+
+.line {
     height: 1vh;
     align-items: center;
     background-color: rgb(253, 253, 14);
 }
-.line hr{
+
+.line hr {
     background-color: white;
     height: 1vh;
     margin: 0 140px;
     border: none;
 }
-#container-2{
+
+#container-2 {
     background: url('https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-collage-search-bottom-large%402x.34b86b17.png&w=1200&q=75');
     background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     height: 10vh;
     padding-top: 250px;
 }
-.main-2{
+
+.main-2 {
     margin-top: -285px;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     text-align: center;
-    margin-left:  80px;
-    
+    margin-left: 80px;
 }
-.bottom{
-    margin-left:  140px;
+
+.bottom {
+    margin-left: 140px;
     width: 50%;
 }
-.bottom h2{
-    font-size: 60px;
 
+.bottom h2 {
+    font-size: 60px;
 }
-.bottom p{
+
+.bottom p {
     font-size: 20px;
     margin: 40px;
 }
-.bottom-2 i{
+
+.bottom-2 i {
     position: absolute;
-    
 }
-.bottom-2{
+
+.bottom-2 {
     width: 50%;
     margin-bottom: 10px;
     margin-left: 160px;
 }
+
 #input-field {
     width: 100%;
     padding: 10px;
@@ -174,23 +202,26 @@ nav #icon{
     border: none;
     border-radius: 20px;
 }
+
 .icon {
     padding: 10px;
     min-width: 40px;
 }
+
 @media (max-width:1048px) {
-    nav ul{
-    margin-right:20px
+    nav ul {
+        margin-right: 20px
     }
-    nav a{
+    nav a {
         font-size: 17px;
     }
 }
+
 @media (max-width:909px) {
-    nav #icon{
-        display:block;
+    nav #icon {
+        display: block;
     }
-    nav ul{
+    nav ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -198,19 +229,218 @@ nav #icon{
         left: -100%;
         text-align: center;
     }
-    nav li{
+    nav li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    nav a{
+    nav a {
         font-size: 20px;
     }
-    a:hover{
+    a:hover {
         border: none;
         color: #3498db;
     }
-    nav ul.show{
+    nav ul.show {
         right: 0;
     }
 }
+
+
+/* akash css */
+
+.recipes_link {
+    text-decoration: none;
+}
+
+.multibox_root {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 28px;
+    margin: auto;
+}
+
+#recandconc img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#recipescontainer {
+    padding: 72px 36px;
+    margin: auto;
+    width: 65%;
+}
+
+.singlebox_click {
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    cursor: pointer;
+}
+
+#recipescontainer>h1+p {
+    width: 70%;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 0px 18px;
+    text-align: center;
+    margin: 0 auto 48px auto;
+    max-width: 768px;
+}
+
+#recipescontainer>h1 {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 23px;
+    width: 100%;
+}
+
+.recipes_detail {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 135px;
+}
+
+.recipes_detail>h3 {
+    padding: 0px 0px 8px;
+    color: black;
+    font-size: 18px;
+}
+
+.recipes_detail>h3+p {
+    font-size: 16px;
+    color: #0066EE;
+    font-weight: 550;
+    line-height: 24px;
+}
+
+
+/* for a concept */
+
+#conceptcontainer {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 45px;
+    width: 40%;
+}
+
+#conceptcontainer>h1 {
+    margin: auto;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 24px;
+    line-height: 1.08;
+    padding: 0px 30px;
+}
+
+#conceptcontainer>p {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+/* playstore__icon */
+
+#appslink {
+    width: 25%;
+    display: flex;
+    margin: auto;
+}
+
+#appslink>a:first-child {
+    margin-right: 15px;
+}
+
+
+/* media query */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .multibox_root>.singlebox_click:first-child {
+        display: none;
+    }
+    .multibox_root {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        margin: auto;
+        column-gap: 28px;
+    }
+    .recipes_detail {
+        min-height: 183px;
+    }
+    #recipescontainer {
+        width: 85%;
+    }
+    #conceptcontainer {
+        width: 60%;
+    }
+    #appslink {
+        width: 55%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 12px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .multibox_root>.singlebox_click:first-child {
+        display: none;
+    }
+    .multibox_root {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 18px;
+        width: 100%;
+        margin: auto;
+    }
+    #conceptcontainer>h1,
+    #recipescontainer>h1 {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 28px;
+    }
+    #conceptcontainer>p,
+    #recipescontainer>h1+p,
+    .recipes_detail>h3+p {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0px;
+    }
+    .recipes_detail>h3 {
+        font-size: 16px;
+    }
+    #recipescontainer {
+        width: 95%;
+        padding: 0px;
+    }
+    #conceptcontainer {
+        width: 90%;
+        padding: 16px 0px;
+    }
+    .recipes_detail {
+        min-height: 100px;
+    }
+    .singlebox_click,
+    img {
+        border-radius: 0px;
+    }
+    #appslink {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 12px;
+    }
+}
+
+
+/* akash end */

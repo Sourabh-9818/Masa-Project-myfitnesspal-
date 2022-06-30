@@ -143,3 +143,37 @@ h5{
     text-decoration: none;
     color: black;
 }
+.footer{
+    background-color: rgb(231, 228, 228);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.foot{
+    margin-top: 40px;
+    margin-left: 22%;
+}
+.foot p{
+    padding-left: 80px;
+   padding-top: 10px;
+    text-align: center;
+}
+.ull{
+    display: flex;
+}
+.ull li{
+    list-style: none;
+}
+.ull a{
+    
+    margin-left: 40px;
+    text-decoration: none;
+}
+.ull a:hover{
+    color: orange;
+}
+#name{
+    width: 10%;
+    margin: 40px 60px;
+    height: 4vh;
+}

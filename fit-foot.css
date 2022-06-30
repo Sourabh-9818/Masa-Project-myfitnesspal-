@@ -1,34 +1,29 @@
-.main {
+.fitfootmain {
     width: 100%;
-background-color: #F6F6F8;
+    background-color: #F6F6F8;
 }
-.main .foot-tags {
+
+.fitfootmain .foot-tags {
     text-align: center;
     padding-top: 40px;
     font-size: 12px;
     font-weight: 400;
-    font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
-    
-   
-
-
-   
-    
-  
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
 }
-.main .foot-tags a{
+
+.fitfootmain .foot-tags a {
     text-decoration: none;
     color: #0066EE;
-   margin-left: 5px;
-   
-
+    margin-left: 5px;
 }
-.main  .selector {
+
+.fitfootmain .selector {
     display: flex;
-    flex-direction:row-reverse;
+    flex-direction: row-reverse;
     padding-right: 15px;
 }
-.main .last-para{
+
+.fitfootmain .last-para {
     text-align: center;
     font-size: 12px;
     padding-bottom: 10px;

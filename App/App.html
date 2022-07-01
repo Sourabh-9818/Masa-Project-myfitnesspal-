@@ -35,80 +35,81 @@
         </label>
         </nav>
 
-    <div id="appspage">
-        <div class="fcontainer">
-            <div class="maindiv">
-                <!--This is a carousel-->
+        <div id="appspage">
+            <div class="fcontainer">
+                <div class="maindiv">
+                    <!--This is a carousel-->
 
-            </div>
-            <div class="sidebar">
-                <nav class="navbar" id="nab-id">
-                    <div>
-                        <div class="input-icons">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input class="input-field" type="text" placeholder="Search">
-                        </div>
-                    </div>
-                    <ul class="side-nav">
-                        <li class="nav-items" style="text-align:left; text-decoration: underline;">
-                            <a href="#" class="site">CATEGORIES</a>
-                        </li>
-                        <li class="nav-items active">
-                            <a href="#" class="nave-link" id="filter" onclick="filterbyapp('all')" >All</a>
-                        </li>
-                        <li class="nav-items">
-                            <a href="#" class="nave-link" id="filter-1" onclick="filterbyapp('Activity Trackers')">Activity Trackers</a>
-                        </li>
-                        <li class="nav-items">
-                            <a href="#" class="nave-link" id="filter-2" onclick="filterbyapp('Fitness Apps')">Fitness Apps</a>
-                        </li>
-                        <li class="nav-items">
-                            <a href="#" class="nave-link" id="filter-3" onclick="filterbyapp('Lifestyles')">Lifestyles</a>
-                        </li>
-                        <li class="nav-items">
-                            <a href="#" class="nave-link" id="filter-4" onclick="filterbyapp('Step Traker')">Step Traker</a>
-                        </li>
-                        <li class="nav-items">
-                            <a href="#" class="nave-link" id="filter-5" onclick="filterbyapp('Scales')">Scales</a>
-                        </li>
-                    </ul>
-                    <div class="animation start"></div>
-                </nav>
-            </div>
-            <div class="head">
-                <h2>Featured Apps</h2>
-                <hr>
-            </div>
-            <div id="app">
-
-            </div>
-            <!--This is a footer-->
-            <footer class="footer">
-                <div class="foot">
-                    <ul class="ull">
-                        <li><a href="#">Calorie Counter </a></li>
-                        <li><a href="#">Blog </a></li>
-                        <li><a href="#">Terms </a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                    <p>© 2022 MyFitnessPal, Inc.</p>
                 </div>
-                <select name="language" id="name">
+                <div class="sidebar">
+                    <nav class="navbar" id="nab-id">
+                        <div>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input class="input-field" type="text" placeholder="Search">
+                            </div>
+                        </div>
+                        <ul class="side-nav">
+                            <li class="nav-items" style="text-align:left; text-decoration: underline;">
+                                <a href="#" class="site">CATEGORIES</a>
+                            </li>
+                            <li class="nav-items active">
+                                <a href="#" class="nave-link" id="filter" onclick="filterbyapp('all')">All</a>
+                            </li>
+                            <li class="nav-items">
+                                <a href="#" class="nave-link" id="filter-1" onclick="filterbyapp('Activity Trackers')">Activity Trackers</a>
+                            </li>
+                            <li class="nav-items">
+                                <a href="#" class="nave-link" id="filter-2" onclick="filterbyapp('Fitness Apps')">Fitness Apps</a>
+                            </li>
+                            <li class="nav-items">
+                                <a href="#" class="nave-link" id="filter-3" onclick="filterbyapp('Lifestyles')">Lifestyles</a>
+                            </li>
+                            <li class="nav-items">
+                                <a href="#" class="nave-link" id="filter-4" onclick="filterbyapp('Step Traker')">Step Traker</a>
+                            </li>
+                            <li class="nav-items">
+                                <a href="#" class="nave-link" id="filter-5" onclick="filterbyapp('Scales')">Scales</a>
+                            </li>
+                        </ul>
+                        <div class="animation start"></div>
+                    </nav>
+                </div>
+                <div class="head">
+                    <h2>Featured Apps</h2>
+                    <hr>
+                </div>
+                <div id="app">
+
+                </div>
+                <!--This is a footer-->
+                <footer class="footer">
+                    <div class="foot">
+                        <ul class="ull">
+                            <li><a href="#">Calorie Counter </a></li>
+                            <li><a href="#">Blog </a></li>
+                            <li><a href="#">Terms </a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        <p>© 2022 MyFitnessPal, Inc.</p>
+                    </div>
+                    <select name="language" id="name">
             <option value="volvo">English</option>
             <option value="saab">hindi</option>
             <option value="mercedes">Nepali</option>
             <option value="audi">Chinese</option>
           </select>
-            </footer>
-        </div>
+                </footer>
+            </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script type="text/javascript">
-            $(document).on('click', 'ul li', function(){
+            $(document).on('click', 'ul li', function() {
                 $(this).addClass('active').siblings().removeClass('active')
             })
         </script>
+    </div>
 </body>
 
 <script>

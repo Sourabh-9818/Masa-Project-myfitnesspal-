@@ -1,10 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+}
+
+#main {
+    margin-top: 30px;
+}
+
 #appspage {
     width: 100%;
+}
+
+.right a {
+    color: #0066EE;
+    font-size: 14px;
+    font-weight: 600px;
+    text-decoration: none;
 }
 
 .maindiv {
@@ -32,10 +48,12 @@
         background-image: url('	https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_30_2_10_0_90706.png');
     }
 }
-.sidebar{
+
+.sidebar {
     right: -10%;
     margin-top: 200px;
 }
+
 .input-icons i {
     position: absolute;
     margin: 10px;
@@ -96,10 +114,17 @@
     padding: 1em;
     flex: 1;
 }
-ul li.active a{
+
+ul li.active a {
     background: blue;
     color: white;
 }
+
+ul li>a:hover {
+    background-color: rgb(30, 47, 202);
+    color: white;
+}
+
 .main {
     display: block;
 }
@@ -243,16 +268,19 @@ h5 {
     font-size: 14px;
     font-weight: 0px;
 }
+
 .nav-1 {
     height: 42px;
     width: 100%;
     background: #0066EE;
 }
+
 nav img {
     margin-top: 15px;
     max-height: 30.6667px;
     max-width: 200px;
 }
+
 .nav-1 ul {
     float: left;
     margin-left: 200px;
@@ -264,6 +292,7 @@ nav img {
     margin-bottom: 10px;
     /* line-height: 20px; */
 }
+
 .nav-1 a {
     color: white;
     font-size: 13px;
@@ -288,6 +317,7 @@ nav img {
     background-color: #044191;
     transition: 0.5s ease;
 }
+
 .nav-1 #icon {
     color: white;
     font-size: 30px;

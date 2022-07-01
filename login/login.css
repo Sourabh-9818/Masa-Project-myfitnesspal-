@@ -5,6 +5,7 @@
 
 #main {
     margin-top: 20px;
+    min-height: 100vh;
 }
 
 #sing_box {
@@ -183,4 +184,35 @@ nav #icon {
     margin-right: 40px;
     cursor: pointer;
     display: none;
+}
+
+.fitfootmain {
+    width: 100%;
+    background-color: #F6F6F8;
+}
+
+.fitfootmain .foot-tags {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+}
+
+.fitfootmain .foot-tags a {
+    text-decoration: none;
+    color: #0066EE;
+    margin-left: 5px;
+}
+
+.fitfootmain .selector {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 15px;
+}
+
+.fitfootmain .last-para {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 10px;
 }

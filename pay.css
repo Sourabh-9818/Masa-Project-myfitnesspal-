@@ -1,0 +1,101 @@
+.pay-top .pay-input{
+    margin-left: 200px;
+    padding-top: 50px;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.pay-top .pay-input .pay-holder{
+    margin-top: 20px;
+    width: 500px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    cursor: text;
+    height: 64px;
+}
+.pay-top .pay-input .pay-num{
+    margin-top: 40px;
+    width: 500px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    cursor: text;
+    height: 64px;
+
+}
+.pay-top .pay-input .pay-mon{
+    margin-top: 40px;
+    width: 120px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    cursor: text;
+    height: 64px;
+
+
+}
+.pay-top .pay-input .pay-cvc{
+    margin-top: 40px;
+    width: 120px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    cursor: text;
+    height: 64px;
+    margin-left: 54px;
+
+}
+.pay-top .pay-input .pay-zip{
+    margin-top: 40px;
+    width: 120px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    cursor: text;
+    height: 64px;
+    margin-left: 54px;
+
+}
+.check-un{
+    margin-left: 200px;
+    margin-top: 50px;
+    width: 510px;
+}
+.check-un h4{
+    display: inline;
+    
+}
+.check-un ul{
+    font-size: 12px;
+    line-height: 150%;
+    color: #8e8e93;
+    padding-left: 40px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+.check-un li{
+    list-style-type: disc;
+    margin-bottom: 12px;
+    line-height: 150%;
+}
+.but-pla button{
+    margin-left: 200px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-family: Armour,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 56px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 510px;
+    z-index: 100;
+
+    background-color: #0063f7;
+    transition: background-color .2s ease-in-out,box-shadow .2s ease-in-out,color .2s ease-in-out;
+}
+.but-pla p{
+    
+        color: #979797;
+        font-size: 13px;
+        line-height: 20px;
+        margin-left: 200px;
+    
+}

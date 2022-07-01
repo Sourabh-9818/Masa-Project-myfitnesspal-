@@ -271,6 +271,10 @@ nav #icon {
     width: 65%;
 }
 
+#recandconc {
+    margin-bottom: 130px;
+}
+
 .singlebox_click {
     /* border: 2px solid red; */
     border-radius: 10px;
@@ -444,6 +448,68 @@ nav #icon {
 
 
 /* akash end */
+
+#tools {
+    display: block;
+    text-align: center;
+    padding: 0 470px;
+}
+
+#para {
+    color: rgb(57, 57, 57);
+}
+
+.goals {
+    font-size: 40px;
+    font-weight: 1000;
+    margin-bottom: 25px;
+}
+
+#learn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    margin-top: 50px;
+    gap: 50px;
+    padding: 0 350px;
+}
+
+.mini {
+    display: block;
+    text-align: center;
+}
+
+.mini>p {
+    color: rgb(57, 57, 57);
+    line-height: 22px;
+    margin-top: 18px;
+}
+
+#btn {
+    margin: auto;
+    display: block;
+    background-color: #0066EE;
+    padding: 17px 30px;
+    color: white;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    cursor: pointer;
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#tools>p {
+    margin-bottom: 20px;
+    line-height: 23px;
+}
+
+#toolsandlern {
+    /* border: 2px solid red; */
+    margin-top: 100px;
+}
 
 .fitfootmain {
     width: 100%;

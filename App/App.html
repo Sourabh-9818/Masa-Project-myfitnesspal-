@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div id="Main">
     <div id="appspage">
         <div class="fcontainer">
             <div class="maindiv">
@@ -29,8 +30,8 @@
                         <li class="nav-items" style="text-align:left; text-decoration: underline;">
                             <a href="#" class="site">CATEGORIES</a>
                         </li>
-                        <li class="nav-items">
-                            <a href="#" class="nave-link" id="filter" onclick="filterbyapp('all')" style="background-color:blue ; color: aliceblue;">All</a>
+                        <li class="nav-items active">
+                            <a href="#" class="nave-link" id="filter" onclick="filterbyapp('all')" >All</a>
                         </li>
                         <li class="nav-items">
                             <a href="#" class="nave-link" id="filter-1" onclick="filterbyapp('Activity Trackers')">Activity Trackers</a>
@@ -48,6 +49,7 @@
                             <a href="#" class="nave-link" id="filter-5" onclick="filterbyapp('Scales')">Scales</a>
                         </li>
                     </ul>
+                    <div class="animation start"></div>
                 </nav>
             </div>
             <div class="head">
@@ -77,6 +79,13 @@
           </select>
             </footer>
         </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(document).on('click', 'ul li', function(){
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+        </script>
 </body>
 
 <script>

@@ -10,67 +10,6 @@ body {
     /* font-family: montserrat; */
 }
 
-.nav {
-    height: 12vh;
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-}
-
-.nav img {
-    margin-left: 150px;
-    height: 12vh;
-}
-
-.right {
-    margin-top: 30px;
-    margin-right: 35px;
-}
-
-.right a {
-    color: blue;
-}
-
-nav {
-    height: 60px;
-    width: 100%;
-    background: rgb(47, 143, 233);
-}
-
-nav ul {
-    float: left;
-    margin-left: 140px;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 8px;
-    margin-bottom: 20px;
-    line-height: 60px;
-}
-
-nav a {
-    color: white;
-    font-size: 18px;
-    border: 1px solid transparent;
-    padding: 7px 15px;
-    border-radius: 3px;
-}
-
-a:hover {
-    border: 1px solid white;
-    transition: .5s ease;
-}
-
-nav #icon {
-    color: white;
-    font-size: 30px;
-    line-height: 60px;
-    float: right;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
 
 #Container {
     background: url('https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-collage-top-large%402x.dcc5ac56.png&w=1200&q=75') no-repeat;

@@ -1,0 +1,42 @@
+<---------My FitnessPal website ---------->
+
+
+<---Team Member --->
+             1 --> Akash Patel
+             2 --> sourabh Jha
+             3 --> Pranesh Nath
+             4 --> Vishnu Gupta
+
+
+<--- Branch Name --->
+
+Repo created ----> sourabh Jha
+
+Master    ---> final website code upload
+
+temporary ---> Akash ---> marging all branch and create final website code
+
+login  ----> Akash  ---> After user login page (logout page)
+                    ---> Singup Page
+                    ---> Singin page       
+                    ---> Forget password page
+
+premium ---> Navbar Premium page ---> Pranesh
+        ---> Payment Page  ---> vishnu
+
+
+App    --->sourabh --->  Navbar Apps page
+
+<---- Landing Page Work ---->
+
+sourabh ---> Navbar design
+        ---> first seaction
+
+Akash  ---> Receipies and inspiration part design
+       ---> Connet over 50 apps part design    
+
+Pranesh ---> Tool for your goals part design
+        ---> Victory stories part design   
+
+Vishnu ---> Footer seaction part design
+       ---> About page create       

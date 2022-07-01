@@ -1,6 +1,11 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 .top-about {
     padding-top: 40px;
-    width: 35%;
+    width: 50%;
     margin-left: 200px;
 }
 
@@ -127,4 +132,104 @@
     text-align: center;
     font-size: 12px;
     padding-bottom: 10px;
+}
+
+
+/* 1234 */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+}
+
+.nav {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.nav img {
+    margin-left: 330px;
+    height: 85px;
+}
+
+.right {
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.right a {
+    color: #0066EE;
+    font-size: 14px;
+    font-weight: 0px;
+}
+
+nav {
+    height: 42px;
+    width: 100%;
+    background: #0066EE;
+}
+
+nav img {
+    margin-top: 10px;
+    max-height: 30.6667px;
+    max-width: 200px;
+}
+
+nav ul {
+    float: left;
+    margin-left: 140px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    margin-bottom: 10px;
+    /* line-height: 20px; */
+}
+
+nav a {
+    color: white;
+    font-size: 13px;
+    border: 1px solid transparent;
+    padding: 12px 15px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 600;
+}
+
+.show>li a {
+    /* margin-top: 4px; */
+    display: block;
+}
+
+.show>li a:hover {
+    background-color: #0249a7;
+    transition: 0.5s ease;
+}
+
+.show>li a:active {
+    background-color: #044191;
+    transition: 0.5s ease;
+}
+
+nav #icon {
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#main {
+    margin-top: 20px;
 }

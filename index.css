@@ -39,7 +39,7 @@ nav {
 
 nav ul {
     float: left;
-    margin-left: 140px;
+    margin-left: 90px;
 }
 
 nav li {
@@ -47,6 +47,12 @@ nav li {
     margin: 0 8px;
     margin-bottom: 20px;
     line-height: 60px;
+    border: 2px solid white;
+}
+
+.show {
+    border: 2px solid red;
+    margin-left: 140px;
 }
 
 nav a {

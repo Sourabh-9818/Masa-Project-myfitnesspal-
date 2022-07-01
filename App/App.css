@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 #appspage {
     width: 100%;
 }
@@ -13,7 +18,7 @@
     background-size: 100% 100%;
     box-shadow: 1px 2px 10px 5px white;
     animation: slider 9s infinite linear;
-    margin: auto;
+    margin-top: 150px;
 }
 
 @keyframes slider {
@@ -29,6 +34,7 @@
 }
 .sidebar{
     right: -10%;
+    margin-top: 200px;
 }
 .input-icons i {
     position: absolute;
@@ -53,7 +59,7 @@
 }
 
 .navbar {
-    bottom: 65%;
+    bottom: 45%;
     margin-right: 45px;
     margin-bottom: 50px;
     position: absolute;
@@ -75,7 +81,7 @@
 }
 
 .nav-items>.nave-link {
-    margin-top: 30px;
+    margin-top: 20px;
     text-decoration: none;
     font-size: 1.1em;
     padding: 1em;
@@ -117,7 +123,7 @@ ul li.active a{
 .head {
     margin-left: 8%;
     width: 60%;
-    margin-top: 300px;
+    margin-top: 320px;
 }
 
 #app>div {
@@ -213,4 +219,81 @@ h5 {
     width: 110%;
     text-align: left;
     margin-left: -20%;
+}
+
+.nav {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.nav img {
+    margin-left: 330px;
+    height: 85px;
+}
+
+.right {
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.right a {
+    color: #0066EE;
+    font-size: 14px;
+    font-weight: 0px;
+}
+.nav-1 {
+    height: 42px;
+    width: 100%;
+    background: #0066EE;
+}
+nav img {
+    margin-top: 15px;
+    max-height: 30.6667px;
+    max-width: 200px;
+}
+.nav-1 ul {
+    float: left;
+    margin-left: 200px;
+}
+
+.nav-1 li {
+    display: inline-block;
+    margin: 0 8px;
+    margin-bottom: 10px;
+    /* line-height: 20px; */
+}
+.nav-1 a {
+    color: white;
+    font-size: 13px;
+    border: 1px solid transparent;
+    padding: 12px 15px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 600;
+}
+
+.show>li a {
+    /* margin-top: 4px; */
+    display: block;
+}
+
+.show>li a:hover {
+    background-color: #0249a7;
+    transition: 0.5s ease;
+}
+
+.show>li a:active {
+    background-color: #044191;
+    transition: 0.5s ease;
+}
+.nav-1 #icon {
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }

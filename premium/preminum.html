@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+        }
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .pnn-1,
+        .ann-3 {
+            margin: 30px 0px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        #pmain {
+            margin-top: 20px;
+            min-height: 150vh;
+            margin-bottom: 100px;
+        }
+        
+        .nav {
+            height: 12vh;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+        }
+        
+        .nav img {
+            margin-left: 330px;
+            height: 85px;
+        }
+        
+        .right {
+            margin-top: 30px;
+            margin-right: 50px;
+        }
+        
+        .right a {
+            color: #0066EE;
+            font-size: 14px;
+            font-weight: 0px;
+        }
+        
+        nav {
+            height: 42px;
+            width: 100%;
+            background: #0066EE;
+        }
+        
+        nav img {
+            margin-top: 10px;
+            max-height: 30.6667px;
+            max-width: 200px;
+        }
+        
+        nav ul {
+            float: left;
+            margin-left: 140px;
+        }
+        
+        nav li {
+            display: inline-block;
+            margin: 0 8px;
+            margin-bottom: 10px;
+            /* line-height: 20px; */
+        }
+        
+        nav a {
+            color: white;
+            font-size: 13px;
+            border: 1px solid transparent;
+            padding: 12px 15px;
+            text-decoration: none;
+            list-style: none;
+            font-weight: 600;
+        }
+        
+        .show>li a {
+            /* margin-top: 4px; */
+            display: block;
+        }
+        
+        .show>li a:hover {
+            background-color: #0249a7;
+            transition: 0.5s ease;
+        }
+        
+        .show>li a:active {
+            background-color: #044191;
+            transition: 0.5s ease;
+        }
+        
+        nav #icon {
+            color: white;
+            font-size: 30px;
+            line-height: 60px;
+            float: right;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        
+        .conatinmainbox {
+            height: 600px;
+            width: 100%;
+            display: flex;
+        }
+        
+        .premiumbox {
+            height: 600px;
+            width: 50%;
+        }
+        
+        .imgbox {
+            height: 600px;
+            width: 50%;
+            background-image: url(https://www.myfitnesspal.com/react-static/d25745179dd7595c07dc1f9b09b89efa.png);
+        }
+        
+        .prem {
+            display: inline-block;
+            color: #222628;
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 0.875rem;
+            background: #ffc600;
+            font-weight: 600;
+            line-height: 1.4;
+            border-radius: 6.6px;
+            margin-left: 300px;
+            margin-top: 100px;
+        }
+        
+        .h1head {
+            margin-left: 300px;
+            font-size: 50px;
+            margin-top: 4px;
+        }
+        
+        .paraprem {
+            margin-left: 300px;
+            font-size: larger;
+            color: rgb(95, 93, 93);
+        }
+        
+        .trialbtn {
+            margin-left: 300px;
+            background-color: #0066ee;
+            padding: 17px 50px;
+            color: white;
+            border-radius: 4px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: transparent;
+            cursor: pointer;
+            margin-top: 30px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        
+        .insta {
+            height: 500px;
+            color: rgb(95, 93, 93);
+        }
+        
+        #learn {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-around;
+            margin-top: 50px;
+            gap: 50px;
+            padding: 0 350px;
+            text-align: center;
+        }
+        
+        .mini {
+            height: 160px;
+            width: 160px;
+        }
+        
+        .minip {
+            font-size: 13px;
+            color: rgb(95, 93, 93);
+        }
+        
+        .pre-pre {
+            text-align: center;
+        }
+        
+        .pre-pre .one-month p {
+            margin-top: 50px;
+            color: #222628;
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 0.875rem;
+            background: #FFC600;
+            font-weight: 600;
+            line-height: 1.4;
+            border-radius: 6.6px;
+            margin-bottom: 0;
+            letter-spacing: 0.25px;
+        }
+        
+        .pre-pre .one-month-head {
+            margin-bottom: 20px;
+            color: #222628;
+            line-height: 1.5;
+        }
+        
+        .pre-pre .one-month-choose {
+            margin: 0 auto;
+            max-width: 500px;
+            margin-bottom: 48px;
+        }
+        
+        .pre-pre .one-month-choose p {
+            color: #6D717A;
+            font-size: 1rem;
+            font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .ann-1 {
+            width: 65%;
+            height: 360px;
+            margin: auto;
+            display: flex;
+        }
+        
+        .ann-1 .ann-2 {
+            width: 47%;
+            height: 100%;
+            margin: auto;
+            background-color: #FFC600;
+            border-radius: 7px;
+        }
+        
+        .ann-1 .ann-3 {
+            width: 47%;
+            height: 100%;
+            margin: auto;
+            border-radius: 7px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        
+        .ann-1 .ann-2 h3 {
+            text-align: center;
+        }
+        
+        .ann-1 .ann-2 .pnn-1 {
+            width: 98%;
+            height: 80%;
+            margin-left: 4px;
+            background-color: white;
+        }
+        
+        .ann-1 .ann-2 .pnn-1 h2 {
+            text-align: center;
+            padding-top: 15px;
+        }
+        
+        .ann-1 .ann-2 .pnn-1 h1 {
+            text-align: center;
+        }
+        
+        .ann-1 .ann-2 .pnn-1 .pnn-2 {
+            font-weight: 400;
+            font-size: medium;
+        }
+        
+        .ann-1 .ann-2 .pnn-1 h4 {
+            color: #6D717A;
+            font-size: 16px;
+            padding-bottom: 17px;
+            font-weight: 600;
+            line-height: 1.25;
+            text-align: center;
+            padding-bottom: 17px;
+        }
+        
+        .ann-1 .ann-2 .pnn-1 .pnn-3 {
+            width: 88%;
+            height: 60px;
+            text-align: center;
+            margin-left: 23px;
+            font-weight: 700;
+            color: #FFF;
+            background-color: #0066EE;
+            border-radius: 5px;
+        }
+        
+        .ann-1 .ann-3 {
+            text-align: center;
+        }
+        
+        .ann-1 .ann-3 h2 {
+            padding-top: 50px;
+        }
+        
+        .ann-1 .ann-3 .knn-1 {
+            font-weight: 400;
+            font-size: medium;
+        }
+        
+        .ann-1 .ann-3 h4 {
+            color: #6D717A;
+            font-size: 16px;
+            padding-bottom: 17px;
+            font-weight: 600;
+            line-height: 1.25;
+            text-align: center;
+            padding-bottom: 17px;
+        }
+        
+        .ann-1 .ann-3 .knn-2 {
+            width: 88%;
+            height: 60px;
+            text-align: center;
+            margin-left: 23px;
+            font-weight: 700;
+            border-radius: 5px;
+            color: #0066EE;
+            border: 1px solid rgba(0, 102, 238, 0.5);
+            border-color: #0066EE;
+            border-width: 2px;
+            background-color: white;
+        }
+        
+        .main {
+            width: 100%;
+            background-color: #F6F6F8;
+        }
+        
+        .main .foot-tags {
+            text-align: center;
+            padding-top: 40px;
+            font-size: 12px;
+            font-weight: 400;
+            font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+        }
+        
+        .main .foot-tags a {
+            text-decoration: none;
+            color: #0066EE;
+            margin-left: 5px;
+        }
+        
+        .main .selector {
+            display: flex;
+            flex-direction: row-reverse;
+            padding-right: 15px;
+        }
+        
+        .main .last-para {
+            text-align: center;
+            font-size: 12px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pmain">
+        <nav class="nav">
+            <img src="https://us.v-cdn.net/6024397/uploads/RP38WAYG9BJD/mfp-wordmark-indigo-tm.png" alt="" />
+            <div class="right">
+                <a href="\Masa-Project-myfitnesspal-\login\sign_up.html">Sign Up</a>
+                <span>|</span>
+                <a href="\Masa-Project-myfitnesspal-\login\sign_in.html">Log In</a>
+            </div>
+        </nav>
+        <!-- Navbar-2 -->
+        <nav>
+            <ul class="show">
+                <li><a href="\Masa-Project-myfitnesspal-\about.html">ABOUT</a></li>
+                <li><a href="#">FOOD</a></li>
+                <li><a href="#">EXERCISE</a></li>
+                <li><a href="\Masa-Project-myfitnesspal-\App\App.html">APPS</a></li>
+                <li><a href="\Masa-Project-myfitnesspal-\login\sign_up.html">COMMUNITY</a></li>
+                <li><a href="https://blog.myfitnesspal.com/">BLOG</a></li>
+                <li><a href="preminum.html">PREMIUM</a></li>
+            </ul>
+            <label for="" id="icon">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+        </nav>
+        <div class="conatinmainbox">
+            <div class="premiumbox">
+                <p class="prem">PREMINUM</p>
+                <h1 class="h1head">Start Your Free Trial Today</h1>
+                <p class="paraprem">
+                    Premium members are 65% more likely to reach their weight loss goal.
+                </p>
+                <button class="trialbtn">START FREE 1-MONTH TRIAL</button>
+            </div>
+            <div class="imgbox">
+                <div><img class="insta" src="https://www.myfitnesspal.com/react-static/e4537e1d014a66cb6083eb6025813bb6.png"></img>
+                </div>
+            </div>
+        </div>
+
+        <div id="learn">
+            <div>
+                <img class="mini" src="https://www.myfitnesspal.com/react-static/51b6c01dec78ddfb6d693b1ff8d23d44.png" />
+                <div>
+                    <h3>Meal Plans & Recipes</h3>
+                </div>
+                <p class="minip">
+                    Gain insight into your nutrition
+                </p>
+            </div>
+            <div>
+                <img class="mini" src="https://www.myfitnesspal.com/react-static/c51db6a037b248c10816974faac845f9.png" />
+                <div>
+                    <h3>Personalized Goals</div>
+                <p class="minip">
+                    Get guidance & coaching tailored to you
+                </p>
+            </div>
+            <div>
+                <img class="mini" src="https://www.myfitnesspal.com/react-static/93c7966575adb77a179235b991596985.png" />
+                <div>
+                    <h3>Ad-Free Experience</h3>
+                </div>
+                <p class="minip">
+                    Focus on your goals without distraction
+                </p>
+            </div>
+        </div>
+        <div class="pre-pre">
+
+
+
+
+            <div class="one-month">
+                <p>1-MONTH FREE</p>
+            </div>
+
+            <div class="one-month-head">
+                <h2>Go Premium, Get Results</h2>
+            </div>
+
+            <div class="one-month-choose">
+                <p>Choose a MyFitnessPal Premium plan to start your 1-month free trial. You will be charged after the trial has ended—cancel anytime.</p>
+
+            </div>
+
+
+        </div>
+        <div class="ann-1">
+            <div class="ann-2">
+                <h3><strong>SAVE 67%</strong></h3>
+                <div class="pnn-1">
+                    <h2><strong>ANNUAL</strong></h2>
+                    <h1><strong>$79.99 </strong><sub class="pnn-2">Per Year</sub></h1>
+                    <h4>$79.99 billed yearly after free trial ends.</h4>
+                    <button class="pnn-3">
+                <span class="pnn-4"><a href="pay.html">SUBSCRIBE</a> </span>
+               </button>
+
+                </div>
+
+            </div>
+            <div class="ann-3">
+                <h2><strong>MONTHLY</strong></h2>
+                <h1><strong>$19.99 </strong><sub class="knn-1">Per Month</sub></h1>
+                <h4>$19.99 billed yearly after free trial ends.</h4>
+                <button class="knn-2">
+                <span class="pnn-4"><a href="pay.html">SUBSCRIBE</a> </span>
+               </button>
+
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="foot-tags">
+            <a href="https://www.myfitnesspal.com/">Calorie Counter</a>
+            <a href="https://www.myfitnesspal.com/">Blog</a>
+            <a href="https://www.myfitnesspal.com/">Terms</a>
+            <a href="https://www.myfitnesspal.com/">Privacy</a>
+            <a href="https://www.myfitnesspal.com/">Contact Us</a>
+            <a href="https://www.myfitnesspal.com/">API</a>
+            <a href="https://www.myfitnesspal.com/">Jobs</a>
+            <a href="https://www.myfitnesspal.com/">Feedback</a>
+            <a href="https://www.myfitnesspal.com/">Community Guidelines</a>
+            <a href="https://www.myfitnesspal.com/">Ad Choices</a>
+            <a href="https://www.myfitnesspal.com/">Do Not Sell My Personal Information</a>
+
+
+        </div>
+        <div class="selector">
+            <select aria-level="language-selector">
+                <option selected value="en">English</option>
+                <option>Deutsch</option>
+                <option>Espanol</option>
+                <option>Francais</option>
+                <option>Portugues (Brasil)</option>
+                <option>Italiano</option>
+                <option>Norsk</option>
+                <option>Nederlands</option>
+                <option>Pyccknn</option>
+                <option>Sevensk</option>
+            </select>
+        </div>
+        <div class="last-para">
+            <p>© 2022 MyFitnessPal, Inc.</p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

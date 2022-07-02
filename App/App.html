@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2356b170a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="App.css">
+    <title>App</title>
+</head>
+
+<body>
+    <div id="Main">
+        <nav class="nav">
+            <img src="https://us.v-cdn.net/6024397/uploads/RP38WAYG9BJD/mfp-wordmark-indigo-tm.png" alt="" />
+            <div class="right">
+                <a href="\Masa-Project-myfitnesspal-\login\sign_up.html">Sign Up</a>
+                <span>|</span>
+                <a href="\Masa-Project-myfitnesspal-\login\sign_in.html">Log In</a>
+            </div>
+        </nav>
+        <nav class="nav-1">
+            <ul class="show">
+                <li><a href="\Masa-Project-myfitnesspal-\about.html">ABOUT</a></li>
+                <li><a href="#">FOOD</a></li>
+                <li><a href="#">EXERCISE</a></li>
+                <li><a href="\Masa-Project-myfitnesspal-\App\App.html">APPS</a></li>
+                <li><a href="\Masa-Project-myfitnesspal-\login\sign_up.html">COMMUNITY</a></li>
+                <li><a href="https://blog.myfitnesspal.com/">BLOG</a></li>
+                <li><a href="\Masa-Project-myfitnesspal-\premium\preminum.html">PREMIUM</a></li>
+            </ul>
+            <label for="" id="icon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        </nav>
+
+        <div id="appspage">
+            <div class="fcontainer">
+                <div class="maindiv">
+                    <!--This is a carousel-->
+
+                </div>
+                <div class="sidebar">
+                    <nav class="navbar" id="nab-id">
+                        <div>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input class="input-field" type="text" placeholder="Search">
+                            </div>
+                        </div>
+                        <ul class="side-nav">
+                            <li class="nav-items" style="text-align:left; text-decoration: underline;">
+                                <a href="#" class="site">CATEGORIES</a>
+                            </li>
+                            <li class="nav-items active">
+                                <a href="#" class="nave-link" id="filter" onclick="filterbyapp('all')">All</a>
+                            </li>
+                            <li class="nav-items">
+                                <a href="#" class="nave-link" id="filter-1" onclick="filterbyapp('Activity Trackers')">Activity Trackers</a>
+                            </li>
+                            <li class="nav-items">
+                                <a href="#" class="nave-link" id="filter-2" onclick="filterbyapp('Fitness Apps')">Fitness Apps</a>
+                            </li>
+                            <li class="nav-items">
+                                <a href="#" class="nave-link" id="filter-3" onclick="filterbyapp('Lifestyles')">Lifestyles</a>
+                            </li>
+                            <li class="nav-items">
+                                <a href="#" class="nave-link" id="filter-4" onclick="filterbyapp('Step Traker')">Step Traker</a>
+                            </li>
+                            <li class="nav-items">
+                                <a href="#" class="nave-link" id="filter-5" onclick="filterbyapp('Scales')">Scales</a>
+                            </li>
+                        </ul>
+                        <div class="animation start"></div>
+                    </nav>
+                </div>
+                <div class="head">
+                    <h2>Featured Apps</h2>
+                    <hr>
+                </div>
+                <div id="app">
+
+                </div>
+                <!--This is a footer-->
+                <footer class="footer">
+                    <div class="foot">
+                        <ul class="ull">
+                            <li><a href="#">Calorie Counter </a></li>
+                            <li><a href="#">Blog </a></li>
+                            <li><a href="#">Terms </a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        <p>© 2022 MyFitnessPal, Inc.</p>
+                    </div>
+                    <select name="language" id="name">
+            <option value="volvo">English</option>
+            <option value="saab">hindi</option>
+            <option value="mercedes">Nepali</option>
+            <option value="audi">Chinese</option>
+          </select>
+                </footer>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(document).on('click', 'ul li', function() {
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+        </script>
+    </div>
+</body>
+
+<script>
+    var mensData = [{
+        id: 1,
+        image_url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_30_1_10_0_45741.png",
+        name: "Fitbit",
+        price: "Activity Trackers",
+        strikedoffprice: "2599",
+    }, {
+        id: 2,
+        image_url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_120_1_10_0_9523.png",
+        name: "Garmin Connect ",
+        price: "Fitness Apps",
+        strikedoffprice: 999,
+    }, {
+        id: 3,
+        image_url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_392_1_10_0_97000.png",
+        name: " Renpho Health",
+        price: "Lifestyles",
+        strikedoffprice: 2099,
+    }, {
+        id: 4,
+        image_url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_389_1_10_0_31181.png",
+        name: "Vesync",
+        price: "Step Traker",
+        strikedoffprice: 799,
+    }, {
+        id: 5,
+        image_url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_2_1_10_0_87968.png",
+        name: "Runtastic",
+        price: "Scales",
+        strikedoffprice: 3599,
+    }, {
+        id: 6,
+        image_url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_139_1_10_0_10915.png ",
+        name: " Withings Health Mate",
+        price: "Activity Trackers",
+        strikedoffprice: 3199,
+    }, {
+        id: 7,
+        image_url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_102_1_10_0_44251.png",
+        name: "RunKeeper",
+        price: "Fitness Apps",
+        strikedoffprice: 1099,
+    }, {
+        id: 8,
+        image_url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_280_1_10_0_42653.png",
+        name: "Pacer Pedometer ",
+        price: "Lifestyles",
+        strikedoffprice: 1440,
+    }, {
+        id: 9,
+        image_url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_331_1_10_0_52964.png ",
+        name: "Polar Flow",
+        price: "Step Traker",
+        strikedoffprice: 999,
+    }, {
+        id: 10,
+        image_url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_86_1_10_0_19952.png",
+        name: "xID",
+        price: "Scales",
+        strikedoffprice: 3599,
+    }, {
+        id: 11,
+        image_url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_125_1_10_0_79468.png ",
+        name: "Goji Play",
+        price: "Step Traker",
+        strikedoffprice: 3599,
+    }, {
+        id: 12,
+        image_url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_134_1_10_0_67780.png ",
+        name: "25K - 5K Trainer",
+        price: "Activity Trackers",
+        strikedoffprice: 999,
+    }, ];
+    displayproduct(mensData);
+
+    function displayproduct(data) {
+        document.querySelector("#app").innerText = "";
+        data.map(function(elem) {
+            var div = document.createElement("div");
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image_url);
+            image.setAttribute("alt", elem.name);
+            var subbox = document.createElement("div");
+            var name = document.createElement("h5");
+            name.innerText = elem.name;
+            var description = document.createElement("p");
+            description.innerText = elem.price;
+            var cartbtn = document.createElement("button");
+            cartbtn.innerText = "GET";
+            cartbtn.style.width = "70px";
+            cartbtn.setAttribute("class", "cartbtn");
+            subbox.append(name, description, cartbtn);
+            cartbtn.addEventListener("click", function() {
+                addToCart(elem.id);
+            });
+            div.append(image, subbox);
+            document.getElementById("app").append(div);
+
+        });
+    }
+
+    function filterbyapp(data) {
+        // var selectapp = document.getElementById("filter-1").value;
+        var filteredapp = mensData.filter(function(elem) {
+            if (data == "" || data == "all") {
+                return true;
+            } else {
+                return elem.price == data;
+            }
+        });
+        displayproduct(filteredapp);
+        console.log(data);
+    }
+</script>
+
+</html>
